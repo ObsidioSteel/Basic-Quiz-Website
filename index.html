@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-<html>
-  <h1>Simple Quiz Site</h1>
+<head>
+  <title>Simple Quiz Site</title>
+</head>
+<html lang="en_US">
+  <body>
+    <!--This is the quiz script that will run alongside the website-->
+    <script type="text/javascript" src="javascript/quiz.js"></script>
 
-  <p>This is a simple quiz website that covers a variety of topics:</p>
+    <h1>Simple Quiz Site</h1>
 
-  <ol>
-    <li>Language</li>
-    <li>Flags</li>
-    <li>Math</li>
-    <li>History</li>
-  </ol>
+    <p>This is a simple quiz website that covers a variety of topics:</p>
 
-  <p>You can select the quiz you would like from the list above.</p>
+    <!--This is the list of topics that will be turned into links-->
+    <ol>
+      <li>Languages</li>
+      <li>Flags (WIP)</li>
+      <li>Math (WIP)</li>
+    </ol>
+
+    <p>You can select the quiz you would like from the list below.<p>
+
+    <label for="Languages">Choose a Language Quiz:</label>
+    <select name="Languages" id="SELECT1" onchange="check1()">
+      <option disabled selected value="Choose1">Choose...</option>
+      <option value="English">English</option>
+      <option value="French">French</option>
+      <option value="German">German</option>
+      <option value="Spanish">Spanish</option>
+    </select>
+    <a href="english_quiz.html" id="LangStart1"><button>Start!</button></a>
+
+    <br>
+
+    <label for="Flags">Choose a Flag Quiz:</label>
+    <select name="Flags" id="SELECT2">
+      <option value="Europe">Europe</option>
+      <option value="Asia">Asia</option>
+      <option value="South America">South America</option>
+      <option value="Africa">Africa</option>
+    </select>
+    <button>Go!</button>
+
+    <br>
+
+    <label for="Math">Choose a Math Quiz:</label>
+    <select name="Math" id="SELECT3">
+      <option value="Addition">Addition</option>
+      <option value="Subtraction">Subtraction</option>
+      <option value="Multiplication">Multiplication</option>
+      <option value="Division">Division</option>
+    </select>
+    <button name="Start Math Quiz">Go!</button>
+  </body>
 </html>
