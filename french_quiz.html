@@ -9,4 +9,43 @@
     </body>
 
     <a href="index.html"><button>Home</button></a>
+
+    <h1>French Quiz</h1>
+    <p>Below you will receive some questions relating to the French language.</p>
+
+    <!--Quiz questions 1 to 5-->
+    <form id="quizForm">
+        <h2>Question 1: Which one is not a pronoun in French?</h2>
+        <input type="radio" name="question1" value="il">il<br>
+        <input type="radio" name="question1" value="ne" id="correct1">ne<br>
+        <input type="radio" name="question1" value="elle">elle<br>
+        <input type="radio" name="question1" value="je">je<br>
+
+        <h2>Question 2: Which word translates to "Milk"?</h2>
+        <input type="radio" name="question2" value="Lait" id="correct2">Lait<br>
+        <input type="radio" name="question2" value="Milch">Milch<br>
+        <input type="radio" name="question2" value="Maitoa">Maitoa<br>
+        <input type="radio" name="question2" value="Leche">Leche<br>
+
+        <h2>Question 3: Which word translates to "Eggs"?</h2>
+        <input type="radio" name="question3" value="Munat">Munat<br>
+        <input type="radio" name="question3" value="Huevos">Huevos<br>
+        <input type="radio" name="question3" value="Eier">Eier<br>
+        <input type="radio" name="question3" value="Œufs" id="correct3">Œufs<br>
+
+        <h2>Question 4: Which word translates to "Door"?</h2>
+        <input type="radio" name="question4" value="Tür">Tür<br>
+        <input type="radio" name="question4" value="Ovi">Ovi<br>
+        <input type="radio" name="question4" value="Porte" id="correct4">Porte<br>
+        <input type="radio" name="question4" value="Puerta">Puerta<br>
+
+        <h2>Question 5: Which country has French as a national language?</h2>
+        <input type="radio" name="question5" value="Austria">Austria<br>
+        <input type="radio" name="question5" value="Canada" id="correct5">Canada<br>
+        <input type="radio" name="question5" value="Finland">Finland<br>
+        <input type="radio" name="question5" value="Bolivia">Bolivia<br>
+
+
+        <button type="submit" onclick="submit_quiz()">Submit</button>
+    </form>
 </html>

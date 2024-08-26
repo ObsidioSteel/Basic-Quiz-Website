@@ -28,12 +28,13 @@
       <option value="German">German</option>
       <option value="Spanish">Spanish</option>
     </select>
-    <a href="english_quiz.html" id="LangStart1"><button>Start!</button></a>
+    <a href="index.html" id="LangStart1"><button>Start!</button></a>
 
     <br>
 
     <label for="Flags">Choose a Flag Quiz:</label>
-    <select name="Flags" id="SELECT2">
+    <select name="Flags" id="SELECT2" onchange="check2()">
+      <option disabled selected value="Choose2">Choose...</option>
       <option value="Europe">Europe</option>
       <option value="Asia">Asia</option>
       <option value="South America">South America</option>
@@ -44,7 +45,8 @@
     <br>
 
     <label for="Math">Choose a Math Quiz:</label>
-    <select name="Math" id="SELECT3">
+    <select name="Math" id="SELECT3" onchange="check3()">
+      <option disabled selected value="Choose3">Choose...</option>
       <option value="Addition">Addition</option>
       <option value="Subtraction">Subtraction</option>
       <option value="Multiplication">Multiplication</option>
