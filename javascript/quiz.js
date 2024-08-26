@@ -1,4 +1,4 @@
-//Homepage dropdown menu functions
+//Language dropdown function
 function check1(){
     const quiz = document.getElementById("SELECT1");
 
@@ -10,19 +10,20 @@ function check1(){
 
 
     if(choice == "English"){
-        document.getElementById("LangStart1").setAttribute("href", "english_quiz.html");
+        document.getElementById("LangStart").setAttribute("href", "english_quiz.html");
     }
     if(choice == "French"){
-        document.getElementById("LangStart1").setAttribute("href", "french_quiz.html");
+        document.getElementById("LangStart").setAttribute("href", "french_quiz.html");
     }
     if(choice == "German"){
-        document.getElementById("LangStart1").setAttribute("href", "german_quiz.html");
+        document.getElementById("LangStart").setAttribute("href", "german_quiz.html");
     }
     if(choice == "Spanish"){
-        document.getElementById("LangStart1").setAttribute("href", "spanish_quiz.html");
+        document.getElementById("LangStart").setAttribute("href", "spanish_quiz.html");
     }
 }
 
+//Flag dropdown function
 function check2(){
     const quiz = document.getElementById("SELECT2");
 
@@ -30,23 +31,24 @@ function check2(){
         quiz.removeChild(quiz.firstElementChild);
     }
 
-    var choice = document.getElementById("SELECT2").options[document.getElementById("SELECT1").selectedIndex].text;
+    var choice = document.getElementById("SELECT2").options[document.getElementById("SELECT2").selectedIndex].text;
 
 
-    if(choice == "English"){
-        document.getElementById("LangStart2").setAttribute("href", "english_quiz.html");
+    if(choice == "Europe"){
+        document.getElementById("FlagStart").setAttribute("href", "europe_quiz.html");
     }
-    if(choice == "French"){
-        document.getElementById("LangStart2").setAttribute("href", "french_quiz.html");
+    if(choice == "Asia"){
+        document.getElementById("FlagStart").setAttribute("href", "asia_quiz.html");
     }
-    if(choice == "German"){
-        document.getElementById("LangStart2").setAttribute("href", "german_quiz.html");
+    if(choice == "South America"){
+        document.getElementById("FlagStart").setAttribute("href", "s_america_quiz.html");
     }
-    if(choice == "Spanish"){
-        document.getElementById("LangStart2").setAttribute("href", "spanish_quiz.html");
+    if(choice == "Africa"){
+        document.getElementById("FlagStart").setAttribute("href", "africa_quiz.html");
     }
 }
 
+//Math dropdown function
 function check3(){
     const quiz = document.getElementById("SELECT3");
 
@@ -54,25 +56,24 @@ function check3(){
         quiz.removeChild(quiz.firstElementChild);
     }
 
-    var choice = document.getElementById("SELECT3").options[document.getElementById("SELECT1").selectedIndex].text;
+    var choice = document.getElementById("SELECT3").options[document.getElementById("SELECT3").selectedIndex].text;
 
 
-    if(choice == "English"){
-        document.getElementById("LangStart3").setAttribute("href", "english_quiz.html");
+    if(choice == "Addition"){
+        document.getElementById("MathStart").setAttribute("href", "addition_quiz.html");
     }
-    if(choice == "French"){
-        document.getElementById("LangStart3").setAttribute("href", "french_quiz.html");
+    if(choice == "Subtraction"){
+        document.getElementById("MathStart").setAttribute("href", "subtraction_quiz.html");
     }
-    if(choice == "German"){
-        document.getElementById("LangStart3").setAttribute("href", "german_quiz.html");
+    if(choice == "Multiplication"){
+        document.getElementById("MathStart").setAttribute("href", "multiplication_quiz.html");
     }
-    if(choice == "Spanish"){
-        document.getElementById("LangStart3").setAttribute("href", "spanish_quiz.html");
+    if(choice == "Division"){
+        document.getElementById("MathStart").setAttribute("href", "division_quiz.html");
     }
 }
 
-
-//Language quiz functions
+//Quiz submission function
 function submit_quiz() {
     var score = 0;
     if(document.getElementById("correct1").checked) {
