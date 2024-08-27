@@ -1,1 +1,51 @@
-<p>Division</p>
+<!DOCTYPE html>
+<head>
+    <title>Division Quiz</title>
+</head>
+<html lang="en_US">
+    <body>
+        <!--This is the script that we will be using-->
+        <script type="text/javascript" src="javascript/quiz.js"></script>
+    </body>
+
+    <a href="index.html"><button>Home</button></a>
+
+    <h1>Division Quiz</h1>
+    <p>Find the quotient of each equation.</p>
+
+    <!--Quiz questions 1 to 5-->
+    <form id="quizForm">
+        <h2>Question 1: 9/3=?</h2>
+        <input type="radio" name="question1" value="2">2<br>
+        <input type="radio" name="question1" value="4">4<br>
+        <input type="radio" name="question1" value="3" id="correct1">3<br>
+        <input type="radio" name="question1" value="5">5<br>
+
+        <h2>Question 2: 48/6=?</h2>
+        <input type="radio" name="question2" value="6">6<br>
+        <input type="radio" name="question2" value="8" id="correct2">8<br>
+        <input type="radio" name="question2" value="7">7<br>
+        <input type="radio" name="question2" value="9">9<br>
+
+        <h2>Question 3: 39/(-13)=?</h2>
+        <input type="radio" name="question3" value="3">3<br>
+        <input type="radio" name="question3" value="4">4<br>
+        <input type="radio" name="question3" value="-1">-1<br>
+        <input type="radio" name="question3" value="-3" id="correct3">-3<br>
+
+        <h2>Question 4: 24.8/3.1=?</h2>
+        <input type="radio" name="question4" value="7">7<br>
+        <input type="radio" name="question4" value="8.4">8.4<br>
+        <input type="radio" name="question4" value="8" id="correct4">8<br>
+        <input type="radio" name="question4" value="7.8">7.8<br>
+
+        <h2>Question 5: 100/(-100)?</h2>
+        <input type="radio" name="question5" value="1">1<br>
+        <input type="radio" name="question5" value="0">0<br>
+        <input type="radio" name="question5" value="1" id="correct5">-1<br>
+        <input type="radio" name="question5" value="infinity">infinity<br>
+
+
+        <button type="submit" onclick="submit_quiz()">Submit</button>
+    </form>
+</html>

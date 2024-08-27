@@ -1,1 +1,51 @@
-<p>Multiplication</p>
+<!DOCTYPE html>
+<head>
+    <title>Multiplication Quiz</title>
+</head>
+<html lang="en_US">
+    <body>
+        <!--This is the script that we will be using-->
+        <script type="text/javascript" src="javascript/quiz.js"></script>
+    </body>
+
+    <a href="index.html"><button>Home</button></a>
+
+    <h1>Multiplication Quiz</h1>
+    <p>Find the product of each equation.</p>
+
+    <!--Quiz questions 1 to 5-->
+    <form id="quizForm">
+        <h2>Question 1: 1x7=?</h2>
+        <input type="radio" name="question1" value="8">8<br>
+        <input type="radio" name="question1" value="1">1<br>
+        <input type="radio" name="question1" value="0">0<br>
+        <input type="radio" name="question1" value="7" id="correct1">7<br>
+
+        <h2>Question 2: 12x6=?</h2>
+        <input type="radio" name="question2" value="72" id="correct2">72<br>
+        <input type="radio" name="question2" value="60">60<br>
+        <input type="radio" name="question2" value="66">66<br>
+        <input type="radio" name="question2" value="80">80<br>
+
+        <h2>Question 3: 21x(-4)=?</h2>
+        <input type="radio" name="question3" value="88">88<br>
+        <input type="radio" name="question3" value="-84" id="correct3">-84<br>
+        <input type="radio" name="question3" value="-88">-88<br>
+        <input type="radio" name="question3" value="84">84<br>
+
+        <h2>Question 4: 20*8.8=?</h2>
+        <input type="radio" name="question4" value="176" id="correct4">176<br>
+        <input type="radio" name="question4" value="180">180<br>
+        <input type="radio" name="question4" value="168">168<br>
+        <input type="radio" name="question4" value="190">190<br>
+
+        <h2>Question 5: 1000x0=?</h2>
+        <input type="radio" name="question5" value="1000">1000<br>
+        <input type="radio" name="question5" value="-1000">-1000<br>
+        <input type="radio" name="question5" value="0" id="correct5">0<br>
+        <input type="radio" name="question5" value="infinite">infinite<br>
+
+
+        <button type="submit" onclick="submit_quiz()">Submit</button>
+    </form>
+</html>

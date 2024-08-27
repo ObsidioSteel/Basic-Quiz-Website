@@ -1,1 +1,51 @@
-<p>Subtraction</p>
+<!DOCTYPE html>
+<head>
+    <title>Subtraction Quiz</title>
+</head>
+<html lang="en_US">
+    <body>
+        <!--This is the script that we will be using-->
+        <script type="text/javascript" src="javascript/quiz.js"></script>
+    </body>
+
+    <a href="index.html"><button>Home</button></a>
+
+    <h1>Subtraction Quiz</h1>
+    <p>Find the difference of each equation.</p>
+
+    <!--Quiz questions 1 to 5-->
+    <form id="quizForm">
+        <h2>Question 1: 8-5=?</h2>
+        <input type="radio" name="question1" value="4">4<br>
+        <input type="radio" name="question1" value="3" id="correct1">3<br>
+        <input type="radio" name="question1" value="1">1<br>
+        <input type="radio" name="question1" value="2">2<br>
+
+        <h2>Question 2: 23-35=?</h2>
+        <input type="radio" name="question2" value="12">12<br>
+        <input type="radio" name="question2" value="-13">-13<br>
+        <input type="radio" name="question2" value="-12" id="correct2">-12<br>
+        <input type="radio" name="question2" value="11">11<br>
+
+        <h2>Question 3: 15-(-5)=?</h2>
+        <input type="radio" name="question3" value="20" id="correct3">20<br>
+        <input type="radio" name="question3" value="15">15<br>
+        <input type="radio" name="question3" value="10">10<br>
+        <input type="radio" name="question3" value="25">25<br>
+
+        <h2>Question 4: 28.7-19.2=?</h2>
+        <input type="radio" name="question4" value="10.9">10.9<br>
+        <input type="radio" name="question4" value="11.3">11.3<br>
+        <input type="radio" name="question4" value="8.7">8.7<br>
+        <input type="radio" name="question4" value="9.5" id="correct4">9.5<br>
+
+        <h2>Question 5: 0-(-100)?</h2>
+        <input type="radio" name="question5" value="0">0<br>
+        <input type="radio" name="question5" value="100" id="correct5">100<br>
+        <input type="radio" name="question5" value="200">200<br>
+        <input type="radio" name="question5" value="-100">-100<br>
+
+
+        <button type="submit" onclick="submit_quiz()">Submit</button>
+    </form>
+</html>
