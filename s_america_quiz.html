@@ -1,1 +1,56 @@
-<p>South America</p>
+<!DOCTYPE html>
+<head>
+    <title>South American Flags Quiz</title>
+</head>
+<html lang="en_US">
+    <body>
+        <!--This is the script that we will be using-->
+        <script type="text/javascript" src="javascript/quiz.js"></script>
+    </body>
+
+    <a href="index.html"><button>Home</button></a>
+
+    <h1>South American Flags Quiz</h1>
+    <p>Try your best to identify the flags below.</p>
+
+    <!--Quiz questions 1 to 5-->
+    <form id="quizForm">
+        <h2>Question 1: What country is this?</h2>
+        <img src="images/Flag_of_Brazil-256x179.png" alt="Brazil Flag"><br>
+        <input type="radio" name="question1" value="Brazil" id="correct1">Brazil<br>
+        <input type="radio" name="question1" value="El Salvado">El Salvador<br>
+        <input type="radio" name="question1" value="Guyana">Guyana<br>
+        <input type="radio" name="question1" value="Jamaica">Jamaica<br>
+
+        <h2>Question 2: What country is this?</h2>
+        <img src="images/Flag_of_Chile-256x171.png" alt="Chile Flag"><br>
+        <input type="radio" name="question2" value="Cuba">Cuba<br>
+        <input type="radio" name="question2" value="Belize">Belize<br>
+        <input type="radio" name="question2" value="Hawaii">Hawaii<br>
+        <input type="radio" name="question2" value="Chile" id="correct2">Chile<br>
+
+        <h2>Question 3: What country is this?</h2>
+        <img src="images/Flag_of_Colombia-256x171.png" alt="Colombia Flag"><br>
+        <input type="radio" name="question3" value="Bolivia">Bolivia<br>
+        <input type="radio" name="question3" value="Colombia" id="correct3">Colombia<br>
+        <input type="radio" name="question3" value="Venezuela">Venezuela<br>
+        <input type="radio" name="question3" value="Panama">Panama<br>
+
+        <h2>Question 4: What country is this?</h2>
+        <img src="images/Flag_of_Peru-256x171.png" alt="Peru Flag"><br>
+        <input type="radio" name="question4" value="Equador">Equador<br>
+        <input type="radio" name="question4" value="Costa">Costa Rica<br>
+        <input type="radio" name="question4" value="Peru" id="correct4">Peru<br>
+        <input type="radio" name="question4" value="Suriname">Suriname<br>
+
+        <h2>Question 5: What country is this?</h2>
+        <img src="images/Flag_of_Argentina-256x160.png" alt="Argentina Flag"><br>
+        <input type="radio" name="question5" value="Paraguay">Paraguay<br>
+        <input type="radio" name="question5" value="Argentina" id="correct5">Argentina<br>
+        <input type="radio" name="question5" value="Uraguay">Uraguay<br>
+        <input type="radio" name="question5" value="Nicaragua">Nicaragua<br>
+
+
+        <button type="submit" onclick="submit_quiz()">Submit</button>
+    </form>
+</html>

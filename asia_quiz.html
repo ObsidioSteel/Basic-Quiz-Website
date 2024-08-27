@@ -1,1 +1,56 @@
-<p>Asia</p>
+<!DOCTYPE html>
+<head>
+    <title>Asian Flags Quiz</title>
+</head>
+<html lang="en_US">
+    <body>
+        <!--This is the script that we will be using-->
+        <script type="text/javascript" src="javascript/quiz.js"></script>
+    </body>
+
+    <a href="index.html"><button>Home</button></a>
+
+    <h1>Asian Flags Quiz</h1>
+    <p>Try your best to identify the flags below.</p>
+
+    <!--Quiz questions 1 to 5-->
+    <form id="quizForm">
+        <h2>Question 1: What country is this?</h2>
+        <img src="images/Flag_of_Myanmar-256x171.png" alt=""><br>
+        <input type="radio" name="question1" value="Lebanon">Lebanon<br>
+        <input type="radio" name="question1" value="Jordan">Jordan<br>
+        <input type="radio" name="question1" value="Syria">Syria<br>
+        <input type="radio" name="question1" value="Myanmar" id="correct1">Myanmar<br>
+
+        <h2>Question 2: What country is this?</h2>
+        <img src="images/Flag_of_Tajikistan-256x128.png" alt=""><br>
+        <input type="radio" name="question2" value="Uzbekistan">Uzbekistan<br>
+        <input type="radio" name="question2" value="Tajikistan" id="correct2">Tajikistan<br>
+        <input type="radio" name="question2" value="Turkmenistan">Turkmenistan<br>
+        <input type="radio" name="question2" value="Kazakhstan">Kazakhstan<br>
+
+        <h2>Question 3: What country is this?</h2>
+        <img src="images/Flag_of_Cambodia-256x164.png" alt=""><br>
+        <input type="radio" name="question3" value="Thailand">Thailand<br>
+        <input type="radio" name="question3" value="Vietnam">Vietnam<br>
+        <input type="radio" name="question3" value="Cambodia" id="correct3">Cambodia<br>
+        <input type="radio" name="question3" value="Azerbaijan">Azerbaijan<br>
+
+        <h2>Question 4: What country is this?</h2>
+        <img src="images/Flag_of_Bhutan-256x171.png" alt=""><br>
+        <input type="radio" name="question4" value="Bhutan" id="correct4">Bhutan<br>
+        <input type="radio" name="question4" value="China">China<br>
+        <input type="radio" name="question4" value="Singapore">Singapore<br>
+        <input type="radio" name="question4" value="Monglia">Monglia<br>
+
+        <h2>Question 5: What country is this?</h2>
+        <img src="images/Flag_of_Laos-256x171.png" alt=""><br>
+        <input type="radio" name="question5" value="Russia">Russia<br>
+        <input type="radio" name="question5" value="Laos" id="correct5">Laos<br>
+        <input type="radio" name="question5" value="Indonesia">Indonesia<br>
+        <input type="radio" name="question5" value="Phillipines">Phillipines<br>
+
+
+        <button type="submit" onclick="submit_quiz()">Submit</button>
+    </form>
+</html>

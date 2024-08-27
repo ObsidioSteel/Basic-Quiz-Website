@@ -1,1 +1,56 @@
-<p>Europe</p>
+<!DOCTYPE html>
+<head>
+    <title>Europe Flags Quiz</title>
+</head>
+<html lang="en_US">
+    <body>
+        <!--This is the script that we will be using-->
+        <script type="text/javascript" src="javascript/quiz.js"></script>
+    </body>
+
+    <a href="index.html"><button>Home</button></a>
+
+    <h1>Europe Flags Quiz</h1>
+    <p>Try your best to identify the flags below.</p>
+
+    <!--Quiz questions 1 to 5-->
+    <form id="quizForm">
+        <h2>Question 1: What country is this?</h2>
+        <img src="images/Flag_of_Lithuania-256x153.png" alt="Lithuania Flag"><br>
+        <input type="radio" name="question1" value="Country">Belarus<br>
+        <input type="radio" name="question1" value="Country">Estonia<br>
+        <input type="radio" name="question1" value="Country" id="correct1">Lithuania<br>
+        <input type="radio" name="question1" value="Country">Latvia<br>
+
+        <h2>Question 2: What country is this?</h2>
+        <img src="images/Flag_of_Finland-256x156.png" alt="Finland Flag"><br>
+        <input type="radio" name="question2" value="Country">Norway<br>
+        <input type="radio" name="question2" value="Country" id="correct2">Finland<br>
+        <input type="radio" name="question2" value="Country">Denmark<br>
+        <input type="radio" name="question2" value="Country">Iceland<br>
+
+        <h2>Question 3: What country is this?</h2>
+        <img src="images/Flag_of_Hungary-256x128.png" alt="Hungary Flag"><br>
+        <input type="radio" name="question3" value="Country" id="correct3">Hungary<br>
+        <input type="radio" name="question3" value="Country">Slovenia<br>
+        <input type="radio" name="question3" value="Country">Austria<br>
+        <input type="radio" name="question3" value="Country">Italy<br>
+
+        <h2>Question 4: What country is this?</h2>
+        <img src="images/Flag_of_Netherlands-256x171.png" alt="Netherlands Flag"><br>
+        <input type="radio" name="question4" value="Country">Russia<br>
+        <input type="radio" name="question4" value="Country">Slovakia<br>
+        <input type="radio" name="question4" value="Country">Croatia<br>
+        <input type="radio" name="question4" value="Country" id="correct4">Netherlands<br>
+
+        <h2>Question 5: What country is this?</h2>
+        <img src="images/Flag_of_Ireland-256x128.png" alt="Ireland Flag"><br>
+        <input type="radio" name="question5" value="Country">Scotland<br>
+        <input type="radio" name="question5" value="Country">United Kingdom<br>
+        <input type="radio" name="question5" value="Country" id="correct5">Ireland<br>
+        <input type="radio" name="question5" value="Country">Wales<br>
+
+
+        <button type="submit" onclick="submit_quiz()">Submit</button>
+    </form>
+</html>

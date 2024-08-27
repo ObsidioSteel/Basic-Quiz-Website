@@ -1,1 +1,56 @@
-<p>Africa</p>
+<!DOCTYPE html>
+<head>
+    <title>African Flags Quiz</title>
+</head>
+<html lang="en_US">
+    <body>
+        <!--This is the script that we will be using-->
+        <script type="text/javascript" src="javascript/quiz.js"></script>
+    </body>
+
+    <a href="index.html"><button>Home</button></a>
+
+    <h1>African Flags Quiz</h1>
+    <p>Try your best to identify the flags below.</p>
+
+    <!--Quiz questions 1 to 5-->
+    <form id="quizForm">
+        <h2>Question 1: What country is this?</h2>
+        <img src="images/Flag_of_Nigeria-256x128.png" alt="Nigeria Flag"><br>
+        <input type="radio" name="question1" value="Country">Niger<br>
+        <input type="radio" name="question1" value="Country" id="correct1">Nigeria<br>
+        <input type="radio" name="question1" value="Country">Kenya<br>
+        <input type="radio" name="question1" value="Country">Zambia<br>
+
+        <h2>Question 2: What country is this?</h2>
+        <img src="images/Flag_of_Chad-256x171.png" alt="Chad Flag"><br>
+        <input type="radio" name="question2" value="Country" id="correct2">Chad<br>
+        <input type="radio" name="question2" value="Country">Romania<br>
+        <input type="radio" name="question2" value="Country">Eritrea<br>
+        <input type="radio" name="question2" value="Country">Ethiopia<br>
+
+        <h2>Question 3: What country is this?</h2>
+        <img src="images/Flag_of_Democratic_Republic_of_Congo-256x192.png" alt="DR Congo Flag"><br>
+        <input type="radio" name="question3" value="Country">Cameroon<br>
+        <input type="radio" name="question3" value="Country">Republic of the Congo<br>
+        <input type="radio" name="question3" value="Country">Morocco<br>
+        <input type="radio" name="question3" value="Country" id="correct3">Democratic Republic of the Congo<br>
+
+        <h2>Question 4: What country is this?</h2>
+        <img src="images/Flag_of_Burkina_Faso-256x171.png" alt="Burkina Faso Flag"><br>
+        <input type="radio" name="question4" value="Country">Egypt<br>
+        <input type="radio" name="question4" value="Country">Somalia<br>
+        <input type="radio" name="question4" value="Country" id="correct4">Burkina Faso<br>
+        <input type="radio" name="question4" value="Country">Mozambique<br>
+
+        <h2>Question 5: What country is this?</h2>
+        <img src="images/Flag_of_Côte_dIvoire-256x171.png" alt="Ivory Coast Flag"><br>
+        <input type="radio" name="question5" value="Country">Ireland<br>
+        <input type="radio" name="question5" value="Country" id="correct5">Ivory Coast<br>
+        <input type="radio" name="question5" value="Country">Tanzania<br>
+        <input type="radio" name="question5" value="Country">Libya<br>
+
+
+        <button type="submit" onclick="submit_quiz()">Submit</button>
+    </form>
+</html>
